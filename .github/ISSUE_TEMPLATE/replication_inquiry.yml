@@ -1,0 +1,24 @@
+name: Replication inquiry
+description: Questions regarding reproducing charts or Bloomberg Terminal fields
+title: "[REPLICATION] "
+labels: ["replication"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for inquiries about data extraction, Bloomberg Terminal parameters, or public filings reconciliation.
+  - type: input
+    id: topic
+    attributes:
+      label: Function / Variable
+      description: Bloomberg function code (e.g., FA, COMP, RV, HP) or statutory data field.
+      placeholder: e.g., COMP <GO>, FCF bridge, segment revenue
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Inquiry Details
+      description: Describe your replication question or observation.
+    validations:
+      required: true
