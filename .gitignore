@@ -1,0 +1,103 @@
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+.env
+*.egg-info/
+dist/
+build/
+
+# ---------- Bloomberg raw data (proprietary; must not be committed) ----------
+# Numbered message folders containing terminal exports
+[0-9][0-9][0-9]__*/
+[0-9][0-9][0-9]__*
+*.xlsx
+*.xls
+*.eml
+*.msg
+
+# Root-level Bloomberg screenshot
+001-company-profile.gif
+
+# ---------- PII and private files ----------
+raw_first_message.eml
+attachments_manifest.tsv
+organization_report.json
+
+# ---------- Private audit and Google Doc working files ----------
+google_doc_before.json
+google_doc_after.json
+google_doc_before.txt
+google_doc_after.txt
+google_doc_planned.txt
+planned_edits.json
+additional_numerical_checks.json
+raw_annual_checks.json
+final_verification.json
+source_checks.json
+source_checks/
+check_revisions.py
+final_checks.py
+strict_audit.py
+REVIEW_NOTES.md
+PROMPT.md
+
+# ---------- Workbook inventory (generated from proprietary xlsx) ----------
+workbook_inventory.json
+
+# ---------- Report outputs containing Bloomberg screenshots ----------
+output/infosys_bloomberg_report_verified.docx
+output/infosys_bloomberg_report_verified.pdf
+output/infosys_bloomberg_report_no_disclosure.docx
+output/infosys_bloomberg_report_no_disclosure.pdf
+output/infosys_bloomberg_data_visualization_report.docx
+output/infosys_bloomberg_data_visualization_report.pdf
+output/infosys_bloomberg_data_visualization_report_academic_style.docx
+output/infosys_bloomberg_data_visualization_report_academic_style.pdf
+output/infosys_bloomberg_data_visualization_report_final.docx
+output/infosys_bloomberg_data_visualization_report_final.pdf
+output/Infosys_Bloomberg_Report_Verified.docx
+output/Infosys_Bloomberg_Report_Verified.pdf
+
+# ---------- Purge manifests & backup bundles ----------
+purge_paths.txt
+*.bundle
+
+# ---------- Preview directories (contain terminal screenshot pages) ----------
+output/preview_pages/
+output/academic_preview/
+output/professional_preview/
+output/verified_preview/
+output/final_p3.png
+output/final_p4.png
+output/final_p9.png
+output/page3_final.png
+output/report_contact_sheet.png
+final_preview/
+
+# ---------- Superseded audit/compliance files ----------
+output/final_compliance_audit.md
+output/academic_style_compliance_audit.md
+output/verified_report_audit.md
+output/report_quality_notes.txt
+output/report_quality_notes_academic_style.txt
+output/report_quality_notes_final.txt
+output/report_quality_notes_verified.txt
+
+# ---------- One-off investigation scripts (not part of the pipeline) ----------
+inspect_workbooks.py
+list_workbook_rows.py
+probe_values.py
+create_no_disclosure_copy.py
+make_contact_sheet.py
+verified_preview.py
+
+# ---------- IDE and OS ----------
+.idea/
+.vscode/
+*.swp
+*~
+.DS_Store
+Thumbs.db
